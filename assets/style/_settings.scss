@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "font1";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+$font1: font1, sans-serif;
+$color1: pink;
+$color2: orange;
+$color3: rgb(54, 50, 50);
+$color4: white;
+
+// MIXINS
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: $color3;
+  color: $color4;
+  font-family: $font1;
+}
